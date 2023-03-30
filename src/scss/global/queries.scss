@@ -1,0 +1,1972 @@
+@import "../_variables";
+@import "../_helper-class";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
+
+// FOR MEDIA QUERIES
+// USE EM UNIT, 1em = 16px
+
+// 1440px - Large screen
+@media screen and (max-width: 90em) {
+  .wrapall {
+    // SECTION SERVICES
+    .services-section {
+      .container {
+        .service-title-txt {
+          .services-title {
+          }
+          .services-text-desc {
+            font-size: $fsize-16;
+            margin-bottom: 5rem;
+          }
+        }
+        .services-nav {
+          margin-bottom: 5rem;
+          border-width: 0;
+          gap: 5rem;
+          .service-tab-item {
+            .service-link {
+              padding-top: 1.6rem;
+              width: 14rem;
+              height: 13rem;
+              .services-icon {
+                width: 50%;
+              }
+              .services-icon-txt {
+                font-size: 1.5rem;
+                .first-word {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .services-tab {
+          .tab-pane {
+            .row {
+              border-radius: 10px;
+              width: 80%;
+              padding: 4rem 0;
+              .services-content {
+                width: 60%;
+                .services-btn {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // SECTION WORKS
+    .works-section {
+      padding: 9rem 0;
+      .works-title {
+      }
+      .work-desc {
+        font-size: $fsize-16;
+        margin-bottom: 4rem;
+      }
+      .works-box {
+        height: 40rem;
+        width: 35rem;
+        &:hover {
+          transform: scale(1.1);
+          border: none;
+          .card {
+            .drop1-img {
+              transform: rotate(10deg) scale(0.85) translateY(3rem);
+            }
+            .drop2-img {
+              transform: translateY(-2rem) scale(0.85);
+            }
+            .csc1-img {
+              transform: scale(0.9) rotate(-6deg);
+            }
+            .csc2-img {
+              visibility: visible;
+              transform: translateY(-30rem) rotate(-10deg) scale(0.9);
+            }
+            .axie1-img {
+              transform: scale(0.8) translate(-20rem, -10rem);
+              box-shadow: 4px 0 6px 0 rgba(34, 34, 34, 0.4);
+            }
+            .axie2-img {
+              visibility: visible;
+              right: -10rem;
+              top: -9rem;
+              transform: scale(0.5) rotate(10deg);
+            }
+            .axie3-img {
+              visibility: visible;
+              left: 0;
+              bottom: 6rem;
+              transform: scale(0.9) rotate(5deg);
+            }
+            .card-img-overlay {
+              .more-btn {
+                padding: 0 0.8rem;
+                &:hover {
+                }
+              }
+            }
+          }
+        }
+        .card {
+          height: 45rem;
+          &::after {
+          }
+          .drop1-img {
+            transition: $tran-7s ease;
+          }
+          .drop2-img {
+            transition: $tran-7s ease;
+            transform: translateY(-6rem);
+          }
+          .csc1-img {
+            transition: $tran-6s ease;
+          }
+          .csc2-img {
+            transition: $tran-6s ease-out;
+            visibility: hidden;
+          }
+          .axie1-img {
+            transition: $tran-5s ease-out;
+          }
+          .axie2-img {
+            position: absolute;
+            right: -500px;
+            visibility: hidden;
+            transition: $tran-6s ease-out;
+          }
+          .axie3-img {
+            bottom: 0;
+            visibility: hidden;
+            transition: $tran-5s ease-out;
+            left: -500px;
+            position: absolute;
+            border-radius: 6px;
+          }
+          .card-img-overlay {
+            top: auto;
+            z-index: 1;
+            left: 2rem;
+            bottom: 6rem;
+            .card-title {
+              font-family: $font-text;
+              font-size: 2.4rem;
+              transition: $tran-1s ease;
+            }
+            .more-btn {
+              font-size: $fsize-16;
+              text-decoration: none;
+              color: $cf7f;
+              transition: $tran-2s ease;
+            }
+          }
+        }
+      }
+    }
+
+    .partners-section {
+      .partners-title {
+        margin-bottom: 4rem;
+        text-align: center;
+      }
+      .container-fluid {
+        .marquee {
+          height: 13rem;
+          position: relative;
+          // overflow: hidden;
+          padding: 2rem 0;
+          .marquee-box-1 {
+            width: 105%;
+            overflow: visible;
+            gap: 7rem;
+            .partners-img {
+              height: 7rem;
+            }
+          }
+        }
+      }
+    }
+
+    // PROJECT PAGE GRADIENT BG
+
+    &.project-wrap {
+      position: relative;
+      &::before {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+        background-image: radial-gradient(
+          21.18% 12.98% at 59.53% 18.26%,
+          rgba(175, 84, 236, 0.2) 0,
+          rgba(175, 84, 236, 0) 100%
+        );
+        transform: rotate(35deg) translate(-951px, -409px);
+      }
+      &::after {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+        background-image: radial-gradient(
+          23.97% 19.08% at 56% 18.65%,
+          rgba(213, 12, 156, 0.17) 0,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: rotate(-49deg) translate(999px, -286px);
+      }
+    }
+  }
+
+  
+}
+
+@media screen and (min-width: 90em) {
+  .wrapall {
+    &.internship-wrap {
+      .employment-section {
+        .carousel-control {
+          &.carousel-control-next {
+            right: 200px
+          }
+
+          &.carousel-control-prev {
+            left: 200px;
+          }
+        }
+      }
+    }
+
+    .terms-container {
+      margin-bottom: 25rem;
+    }
+  }
+}
+// DESIGN BREAK IN PROJECT PAGE
+// 1400px
+@media screen and (max-width: 88em) {
+  .wrapall {
+    .section-webdev {
+      .webdev-content {
+        .webproj-box {
+          width: 60%;
+        }
+        .webproj-info {
+          width: 40%;
+          .card-proj {
+            width: 108%;
+          }
+        }
+      }
+    }
+  }
+
+    //About-page
+    .wrapall {
+    .team-section {
+      .img-container {
+        .team-img-2 {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
+
+// 1200px - Medium Screen
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 56.25% !important;
+  }
+  .wrapall {
+    .section-webdev {
+      .webdev-content {
+        .webproj-box {
+          .proj-img-box {
+            .proj-img-1 {
+              transform: scale(0.28);
+            }
+            .proj-img-2 {
+              transform: scale(0.9);
+            }
+          }
+        }
+        .webproj-info {
+          .card-proj {
+            width: 108%;
+          }
+        }
+      }
+    }
+  }
+
+  //About-page
+  .wrapall {
+    .team-section {
+      .img-container {
+        transform: scale(0.9);
+        .team-img-2 {
+          left: -5rem;
+          bottom: -22.5rem;
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
+
+// 1024px - SMALL SCREEN
+@media screen and (max-width: 64em) {
+  .wrapall {
+    // SECTION SERVICES
+    .services-section {
+      .container {
+        .service-title-txt {
+          .services-text-desc {
+            width: 75%;
+          }
+        }
+      }
+    }
+
+    // SECTION WORKS
+    .works-section {
+      padding: 9rem 0;
+      .works-box {
+        height: 38rem;
+        width: 30rem;
+        &:hover {
+          .card {
+            .csc1-img {
+              transform: scale(0.9) rotate(-6deg);
+            }
+            .csc2-img {
+              transform: translateY(-20rem) rotate(-10deg) scale(0.9);
+            }
+            .axie1-img {
+              transform: scale(0.8) translate(-11rem, -10rem);
+            }
+            .axie2-img {
+              right: -7rem;
+              top: -6rem;
+            }
+            .axie3-img {
+              bottom: 11rem;
+              transform: scale(0.9) rotate(5deg);
+            }
+          }
+        }
+
+        .card {
+          .card-img-overlay {
+            top: auto;
+            z-index: 1;
+            left: 2rem;
+            bottom: 9rem;
+          }
+        }
+      }
+    }
+
+    // INTERNSHIP PAGE
+    
+    &.internship-wrap {
+      .hero-section {
+        &.intern-hero {
+          .hero-content {
+            .hero-intern {
+              .hero-intern-title{
+                .intern-rotate {
+                  transform: (rotate(270deg));
+                  font-size: 4.1rem;
+                  bottom: 6rem;
+                  left: 0;
+                  margin-left: -8rem;
+                }
+                .intern-title {
+                  font-size: 16rem;
+                }
+              }
+              .intern-sub {
+                transform: translate(0px, -50px);
+                font-size: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //About-page
+  .wrapall {
+    .team-section {
+      .img-container {
+        transform: scale(0.8);
+        .team-img-1 {
+          transform: translate(80px);
+        }
+        
+        .team-img-2 {
+          left: -3rem;
+          bottom: -25.5rem;
+          transform: scale(0.7);
+        }
+      }
+    }
+  }
+
+      // START CONTACT
+.form-section {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 5rem;
+}
+// END CONTACT
+}
+
+// 990px
+@media screen and (max-width: 62em) {
+  .wrapall {
+    // SECTION SERVICES
+    .services-section {
+      .container {
+        .services-tab {
+          .tab-pane {
+            .row {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    // SECTION WORKS
+    .works-section {
+      .works-box {
+        height: 32rem;
+        width: 25rem;
+        &:hover {
+          transform: scale(1.1);
+          border: none;
+          .card {
+            .csc1-img {
+              transform: scale(0.9) rotate(-6deg);
+            }
+            .csc2-img {
+              transform: translateY(-20rem) rotate(-10deg) scale(0.9);
+            }
+            .axie1-img {
+              transform: scale(0.8) translate(-11rem, -10rem);
+            }
+            .axie2-img {
+              right: -7rem;
+              top: -6rem;
+            }
+            .axie3-img {
+              bottom: 15rem;
+            }
+          }
+        }
+        .card {
+          .card-img-overlay {
+            top: auto;
+            z-index: 1;
+            left: 2rem;
+            bottom: 14rem;
+          }
+        }
+      }
+    }
+
+    // SECTION PARTNERS
+    .partners-section {
+      .container-fluid {
+        .marquee {
+          .marquee-box-1 {
+            animation: marquee 7s linear infinite;
+          }
+        }
+      }
+    }
+
+    // PROJECT PAGE
+    .section-webdev {
+      .webdev-content {
+        .webproj-box {
+          width: 70%;
+          .proj-img-box {
+            .proj-img-1 {
+              transform: scale(0.25) translateY(-12rem);
+            }
+            .proj-img-2 {
+              transform: scale(0.9);
+            }
+          }
+        }
+        .webproj-info {
+          width: 30%;
+          .card-proj {
+            width: 127%;
+          }
+        }
+      }
+    }
+
+    &.project-wrap {
+      position: relative;
+      &::before {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+        background-image: radial-gradient(
+          33.18% 12.98% at 59.53% 18.26%,
+          rgba(175, 84, 236, 0.2) 0,
+          rgba(175, 84, 236, 0) 100%
+        );
+        transform: rotate(35deg) translate(-951px, -409px);
+      }
+      &::after {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+        background-image: radial-gradient(
+          31.97% 19.08% at 56% 18.65%,
+          rgba(213, 12, 156, 0.17) 0,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: rotate(-49deg) translate(999px, -286px);
+      }
+    }
+
+    // SERVICES PAGES
+    &.services-page {
+      .section-price {
+        .container {
+          .price-nav {
+            display: none !important;
+            &.mobile {
+              display: block !important;
+              .row {
+                gap: 5rem;
+                .price-tab-item {
+                  border: none;
+                  .price-link {
+                    height: 100%;
+                    padding: 4rem 8rem;
+                    background-color: $cf7f;
+                    .card-header-bg {
+                      height: 10.4rem;
+                      border-radius: 10px 10px 0px 0px;
+                      .card-title-color {
+                        color: $c4c5;
+                        font-weight: bold;
+                        font-size: 2.4rem;
+                        text-align: center;
+                      }
+                      &.customize-header {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                      }
+                    }
+                    .ul-div {
+                      .card-text {
+                        li {
+                          font-size: $fsize-16;
+                        }
+                      }
+                      // PRICES FOR FIRST 3 CARDS
+                      .price-num {
+                        .gradient-price {
+                          background: linear-gradient(
+                              241.87deg,
+                              #4c519f 13.55%,
+                              #785bb9 29.94%,
+                              #68338a 50.54%,
+                              #bd468b 79.56%,
+                              #f7053f 103.43%
+                            ),
+                            #ffffff;
+                          -webkit-background-clip: text;
+                          -webkit-text-fill-color: $cnone;
+                          font-size: 3.6rem;
+                        }
+                      }
+                      .price-desc {
+                        font-size: $fsize-16;
+                        color: $c333;
+                      }
+                      // CUSTOMIZE CARD MID
+                      .customize-txt {
+                        padding: 0 4rem;
+                        font-size: $fsize-14;
+                        text-decoration: none;
+                        color: $c333;
+                      }
+                      &.customize-info {
+                        gap: 5rem;
+                        font-size: $fsize-16;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // INTERNSHIP PAGE
+    &.internship-wrap {
+      .hero-section {
+        &.intern-hero {
+          .hero-content {
+            .hero-intern {
+              .hero-intern-title{
+                .intern-rotate {
+                  transform: (rotate(270deg));
+                  font-size: 3.5rem;
+                  bottom: 5.5rem;
+                  left: 0;
+                  margin-left: -6rem;
+                }
+                .intern-title {
+                  font-size: 14rem;
+                }
+              }
+              .intern-sub {
+                transform: translate(0px, -42px);
+                font-size: 3.6rem;
+              }
+            }
+          }          
+        }
+      }
+    }
+  }
+
+  //About-page
+  .wrapall {
+    .team-section {
+      .img-container {
+        transform: scale(0.6);
+        .team-img-1 {
+          transform: translate(-60px);
+        }
+        
+        .team-img-2 {
+          left: -28rem;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    .container-fluid {
+      .navbar-toggler {
+        border: none;
+        &:focus {
+          box-shadow: none;
+        }
+        .toggler-icon:first-child {
+          width: 28px;
+          height: 28px;
+          color: $cf7f;
+          display: block;
+        }
+        .toggler-icon:last-child {
+          display: none;
+        }
+      }
+    }
+    &.light {
+      &.is-sticky {
+        .container-fluid {
+          .navbar-toggler {
+            .toggler-icon:first-child {
+              width: 28px;
+              height: 28px;
+              color: #f7f7f7;
+              display: block;
+            }
+            .toggler-icon:last-child {
+              display: none;
+            }
+          }
+        }
+        &.is-sticky-toggle {
+          .container-fluid {
+            .navbar-toggler {
+              .toggler-icon:last-child {
+                width: 28px;
+                height: 28px;
+                color: #f7f7f7;
+                display: block;
+              }
+              .toggler-icon:first-child {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+    // START CONTACT
+.contact-section {
+  padding-top: 8rem;
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 5rem;
+}
+// END CONTACT
+}
+
+// 768px TABLET SCREEN
+@media screen and (max-width: 48.5em) {
+  .wrapall {
+    // SECTION HERO
+    .hero-section {
+      .container {
+        .row {
+          .hero-content {
+            .hero-title {
+              font-size: 4.2rem;
+            }
+            .hero-txt {
+              font-size: 1.8rem;
+              width: 40rem;
+            }
+          }
+        }
+      }
+    }
+    // SECTION SERVICES
+    .services-section {
+      .container {
+        .services-nav {
+          margin-bottom: 5rem;
+          border-width: 0;
+          gap: 2rem;
+          .service-tab-item {
+            .service-link {
+              padding-top: 1.6rem;
+              width: 12rem;
+              height: 11rem;
+              .services-icon {
+                width: 40%;
+              }
+              .services-icon-txt {
+                font-size: 1.5rem;
+                .first-word {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // SECTION WORKS
+    .works-section {
+      .row {
+        flex-direction: column;
+        gap: 5rem;
+        & > * {
+          width: auto;
+        }
+      }
+      .works-box {
+        height: 45rem;
+        width: 40rem;
+        &:hover {
+          border: none;
+          .card {
+            .drop1-img {
+              transform: rotate(10deg) scale(0.85) translateY(3rem);
+            }
+            .drop2-img {
+              transform: translateY(-2rem) scale(0.85);
+            }
+            .csc1-img {
+              transform: scale(0.9) rotate(-6deg);
+            }
+            .csc2-img {
+              visibility: visible;
+              transform: translateY(-30rem) rotate(-10deg) scale(0.9);
+            }
+            .axie1-img {
+              transform: scale(0.8) translate(-20rem, -10rem);
+              box-shadow: 4px 0 6px 0 rgba(34, 34, 34, 0.4);
+            }
+            .axie2-img {
+              visibility: visible;
+              right: -10rem;
+              top: -9rem;
+              transform: scale(0.5) rotate(10deg);
+            }
+            .axie3-img {
+              visibility: visible;
+              left: 0;
+              bottom: 6rem;
+              transform: scale(0.9) rotate(5deg);
+              box-shadow: 0 4px 6px 0 rgba(34, 34, 34, 0.4);
+            }
+            .card-img-overlay {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              .card-title {
+                color: $c333;
+                padding: 0 0.8rem;
+                display: inline-block;
+                border-radius: 4px;
+                background-image: linear-gradient(
+                  rgba(255, 255, 255, 0.7),
+                  rgba(255, 255, 255, 0.7)
+                );
+                box-shadow: 2px 3px 4px 0 rgba(34, 34, 34, 0.2);
+              }
+              .more-btn {
+                color: $c333;
+                font-weight: 600;
+                padding: 0 0.8rem;
+                border-radius: 4px;
+                background-image: linear-gradient(
+                  rgba(255, 255, 255, 0.7),
+                  rgba(255, 255, 255, 0.7)
+                );
+                box-shadow: 2px 3px 4px 0 rgba(34, 34, 34, 0.2);
+                &:hover {
+                  background-image: linear-gradient(
+                    rgba(33, 33, 33, 0.7),
+                    rgba(33, 33, 33, 0.7)
+                  );
+                  color: $cf7f;
+                }
+              }
+            }
+          }
+        }
+        .card {
+          .card-img-overlay {
+            top: auto;
+            z-index: 1;
+            left: 2rem;
+            bottom: 3rem;
+            .card-title {
+              font-family: $font-text;
+              font-size: 2.4rem;
+              transition: $tran-1s ease;
+            }
+            .more-btn {
+              font-size: $fsize-16;
+              text-decoration: none;
+              color: $cf7f;
+              transition: $tran-2s ease;
+            }
+          }
+        }
+      }
+    }
+    // SECTION FEATURED
+    .featured-section {
+      .container {
+        .feature-container {
+          text-align: center;
+          .featured-title {
+            margin-bottom: 3rem;
+          }
+          .row {
+            gap: 3rem;
+            .feature-img {
+              height: auto;
+              width: 18rem;
+            }
+          }
+        }
+      }
+    }
+
+    // PROJECT PAGE
+    .section-webdev {
+      .webdev-content {
+        // display: block;
+        flex-direction: column;
+        gap: 3rem;
+        .webproj-box {
+          width: 100%;
+          &.switch-1 {
+            order: 2;
+          }
+          .proj-img-box {
+            .proj-img-1 {
+              transform: scale(0.28) translateY(-12rem);
+            }
+            .proj-img-2 {
+              transform: scale(0.9);
+            }
+          }
+        }
+
+        .webproj-info {
+          width: 100%;
+          &.switch-2 {
+            order: 1;
+          }
+          position: initial;
+          .card-proj {
+            top: auto;
+            position: initial;
+            width: 100%;
+            transform: translate(0, 0);
+          }
+        }
+      }
+    }
+    .section-graphics {
+      .graphics-content {
+        .graphics-content-box {
+          .graphics-item {
+            .graphics-box {
+              &.logo-box {
+                width: 110px;
+                height: 110px;
+                .graphics-img.logo {
+                  transform: scale(0.6);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.project-wrap {
+      position: relative;
+      &::before {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+        background-image: radial-gradient(
+          50.18% 12.98% at 59.53% 18.26%,
+          rgba(175, 84, 236, 0.2) 0,
+          rgba(175, 84, 236, 0) 100%
+        );
+        transform: rotate(35deg) translate(-1079px, -524px);
+      }
+      &::after {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 0;
+        background-image: radial-gradient(
+          47.97% 19.08% at 56% 18.65%,
+          rgba(213, 12, 156, 0.17) 0,
+          rgba(255, 255, 255, 0) 100%
+        );
+        transform: rotate(308deg) translate(1481px, -562px);
+      }
+    }
+
+    
+    // INTERNSHIP PAGE
+    &.internship-wrap {
+      .hero-section {
+        &.intern-hero {
+          .hero-content {
+            .hero-intern {
+              .hero-intern-title{
+                .intern-rotate {
+                  transform: (rotate(270deg));
+                  font-size: 3rem;
+                  bottom: 4rem;
+                  left: 0;
+                  margin-left: -5.5rem;
+                }
+                .intern-title {
+                  font-size: 11rem;
+                }
+              }
+              .intern-sub {
+                transform: translate(0px, -30px);
+                font-size: 3.2rem;
+              }
+            }
+          }
+        }
+      }
+
+      .employment-section {
+        .carousel-inner {
+          .carousel-item {
+            padding: 4rem 12rem;
+            .row {
+              .img-box {
+                text-align: left;
+              }
+            }
+          }
+        }
+        .carousel-control {
+          .next-icon {
+            width: 2rem;
+            height: 3.5rem;
+          }
+
+          .prev-icon {
+            @extend .next-icon;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .container,
+    .container-sm {
+      max-width: 700px;
+      footer {
+        .social-icons {
+          .svg-box {
+            width: 2.8rem;
+            height: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  //About-page
+  .wrapall {
+    .team-section {
+      .img-container {
+        width: 50%;
+        .team-img-1 {
+          transform: translate(-120px);
+        }
+        
+        .team-img-2 {
+          left: -35rem;
+        }
+      }
+    }
+  }
+
+  .switch-1 {
+    order: 2;
+  }
+
+  .switch-2 {
+    order: 1;
+  }
+
+  // START CONTACT
+.contact-section {
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 0;
+}
+// END CONTACT
+}
+
+// 585px
+@media screen and (max-width: 47.8em) {
+  // START CONTACT
+.contact-section {
+  font-family: $font-text;
+  .contact-details {
+    .contact-phone-email {
+      .contact-email {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10rem;
+  .form-text {
+    margin-bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .form-container {
+    margin-top: 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+}
+// END CONTACT
+}
+
+// 576px - DESIGN BREAK
+@media (max-width: 36.5em) {
+  .wrapall {
+    // SECTION HERO
+    header {
+      .hero-section {
+        .container {
+          .row {
+            .hero-content {
+              .hero-title {
+                font-size: 3.5rem;
+                width: 80%;
+              }
+              .hero-text {
+                font-size: 1.8rem;
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .reviews-section {
+      .carousel-inner {
+        height: 100%;
+        padding: 10rem 3rem 3rem 3rem;
+      }
+    }
+
+    .section-graphics {
+      .graphics-content {
+        .graphics-content-box {
+          .banner-content {
+            gap: 2rem;
+          }
+          .graphics-item {
+            .graphics-box {
+              &.logo-box {
+                width: 90px;
+                height: 90px;
+                .graphics-img.logo {
+                  transform: scale(0.5);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.project-wrap {
+      .project-hero,
+      .section-webdev,
+      .section-graphics {
+        .container {
+          max-width: 450px;
+        }
+      }
+
+      .section-webdev {
+        .webdev-content {
+          .webproj-box {
+            .proj-img-box {
+              height: 28rem;
+              .proj-img-1 {
+                transform: scale(0.23);
+              }
+              .proj-img-2 {
+                transform: scale(0.65);
+                bottom: -115px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      .footer-container {
+        .center {
+          text-align: center;
+          display: block !important;
+        }
+        .footer-content {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .info-box {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 0;
+            .txt-info {
+              width: 80%;
+              margin: 0 auto;
+              text-align: center;
+              .visit-txt {
+                font-size: 2rem;
+              }
+              .address {
+              }
+              .copyright-txt {
+                text-align: center;
+              }
+            }
+          }
+          .social-icons {
+            .svg-box {
+            }
+          }
+          .directory {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 2rem;
+            div {
+              width: 50%;
+              .category-title {
+                font-size: 2rem;
+              }
+              .nav {
+                .nav-item {
+                  .nav-link {
+                    font-size: 1.4rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // INTERNSHIP PAGE
+    
+    &.internship-wrap {
+      .hero-section {
+        &.intern-hero {
+          .hero-content {
+            .hero-intern {
+              .hero-intern-title{
+                .intern-rotate {
+                  transform: (rotate(0));
+                  font-size: 3.2rem;
+                  left: 48px;
+                  top: -16px;
+                  margin-left: -5rem;
+                }
+                .intern-title {
+                  font-size: 9.8rem;
+                }
+              }
+              .intern-sub {
+                transform: translate(0px, -32px);
+                font-size: 3.2rem;
+              }
+            }
+            .intern-sub-hero {
+              .sub-text {
+                width: 70%;
+                text-align: center;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+    
+  }
+
+  //About-page
+  .wrapall {
+    .team-section {
+      .img-container {
+        .team-img-1 {
+          width: 94rem;
+          transform: translate(-66px);
+        }
+        
+        .team-img-2 {
+          left: -24rem;
+          transform: scale(0.5);
+        }
+      }
+    }
+  }
+
+  // START CONTACT
+.contact-section {
+  font-family: $font-text;
+  .contact-details {
+    .contact-phone-email {
+      .contact-email {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10rem;
+  .form-text {
+    margin-bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .form-container {
+    margin-top: 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+}
+// END CONTACT
+}
+
+// 493px - DESIGN BREAK
+@media screen and (max-width: 31em) {
+  .wrapall {
+    // SERVICES SECTION
+    .services-section {
+      .container {
+        .service-title-txt {
+        }
+        .feature-mobile {
+          display: block !important;
+          .services-nav-mobile {
+            margin-bottom: 5rem;
+            border-width: 0;
+            .service-tab-item {
+              position: relative;
+              .service-link {
+                width: 10rem;
+                height: 9rem;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                box-shadow: 0 0 0 4px white;
+                background-color: white;
+                border: none;
+                &.active {
+                  &::after {
+                    content: "";
+                    margin: 0 auto;
+                    position: absolute;
+                    height: 3px;
+                    width: 60%;
+                    background-image: linear-gradient(
+                      to left,
+                      rgba(76, 82, 159, 0.6),
+                      rgba(247, 5, 63, 1)
+                    );
+                    border-radius: 10px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                  }
+                }
+                .services-icon {
+                  width: 30%;
+                }
+                .services-icon-txt {
+                  color: $c333;
+                  font-size: 1.5rem;
+                  text-decoration: none;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+        .services-nav {
+          display: none !important;
+        }
+      }
+    }
+
+    // SECTION FEATURED
+    .featured-section {
+      .container {
+        .feature-container {
+          display: none;
+        }
+        .carousel-feature {
+          display: block;
+          .carousel-inner {
+            .carousel-item {
+              .feature-img {
+                height: auto;
+                width: 25rem;
+                filter: invert(70%);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.project-wrap {
+      .section-webdev {
+        .webdev-content {
+          padding: 4.2rem 0;
+          .webproj-info {
+            .card-proj {
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+          }
+          .webproj-box {
+            .proj-box-svg {
+              display: none;
+            }
+            .proj-img-box {
+              background: none;
+              box-shadow: none;
+              height: 28rem;
+              .proj-img-1 {
+                box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+                transform: scale(0.25);
+              }
+              .proj-img-2 {
+                transform: scale(0.75);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // INTERNSHIP PAGE
+    &.internship-wrap {
+      .hero-section {
+        &.intern-hero {
+          .hero-content {
+            .hero-intern {
+              .hero-intern-title{
+                .intern-rotate {
+                  transform: (rotate(0));
+                  font-size: 4rem;
+                  left: 46px;
+                  top: -35px;
+                  margin-left: -5rem;
+                }
+                .intern-title {
+                  font-size: 7.8rem;
+                }
+              }
+              .intern-sub {
+                transform: translate(0px, -26px);
+                font-size: 4rem;
+              }
+            }
+            .intern-sub-hero {
+              .sub-text {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //About-page
+  .wrapall {
+      .team-section {
+        .img-container {
+          .team-img-1 {
+            width: 75rem;
+            transform: translate(-66px);
+          }
+          .team-img-2 {
+            bottom: -26.5rem;
+            left: -28rem;
+            transform: scale(0.4);
+          }
+        }
+      }
+    }
+
+  // START CONTACT
+.contact-section {
+  font-family: $font-text;
+  .contact-details {
+    .contact-phone-email {
+      .contact-email {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5rem;
+  .form-text {
+    margin-bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .form-container {
+    margin-top: 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+}
+// END CONTACT
+}
+
+// 425px - L Mobile
+@media screen and (max-width: 27em) {
+  html {
+    font-size: 50% !important;
+  }
+
+  // SECTION HERO
+  .wrapall {
+    header {
+      .hero-section {
+        .container {
+          .row {
+            .hero-content {
+              .hero-title {
+                font-size: 3.5rem;
+                width: 72%;
+              }
+              .hero-text {
+                font-size: 1.8rem;
+                width: 65%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-graphics {
+      .graphics-content {
+        .graphics-content-box {
+          .graphics-item {
+            .graphics-box {
+              &.logo-box {
+                width: 75px;
+                height: 75px;
+                .graphics-img.logo {
+                  transform: scale(0.4);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.project-wrap {
+      .section-webdev {
+        .webdev-content {
+          .webproj-box {
+            .proj-img-box {
+              .proj-img-1 {
+                box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+                transform: scale(0.21);
+              }
+              .proj-img-2 {
+                transform: scale(0.65);
+                bottom: -80px;
+              }
+            }
+          }
+        }
+      }
+      .project-hero,
+      .section-webdev,
+      .section-graphics {
+        .container {
+          max-width: 370px;
+        }
+      }
+    }
+
+    &.internship-wrap {
+      .employment-section {
+        .carousel-inner {
+          .carousel-item {
+            padding: 4rem 9rem;
+            .row {
+              .img-box {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // START CONTACT
+.contact-section {
+  font-family: $font-text;
+  .contact-details {
+    .contact-phone-email {
+      .contact-email {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5rem;
+  .form-text {
+    margin-bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .form-container {
+    margin-top: 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+}
+// END CONTACT
+
+}
+
+// 375px - M Mobile
+@media screen and (max-width: 24em) {
+  // SECTION HERO
+  .wrapall {
+    header {
+      .hero-section {
+        .container {
+          .row {
+            .hero-content {
+              .hero-title {
+                font-size: 3.5rem;
+                width: 60%;
+              }
+              .hero-text {
+                font-size: 1.8rem;
+                width: 48%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.project-wrap {
+      .section-webdev {
+        .webdev-content {
+          .webproj-box {
+            .proj-img-box {
+              .proj-img-1 {
+                transform: scale(0.18);
+              }
+            }
+          }
+        }
+      }
+
+      .project-hero,
+      .section-webdev,
+      .section-graphics {
+        .container {
+          max-width: 320px;
+        }
+      }
+    }
+
+    // INTERNSHIP PAGE
+    &.internship-wrap {
+      .hero-section {
+        &.intern-hero {
+          .hero-content {
+            .hero-intern {
+              .hero-intern-title{
+                .intern-rotate {
+                  transform: (rotate(0));
+                  font-size: 3.2rem;
+                  left: 46px;
+                  top: -25px;
+                  margin-left: -5.6rem;
+                }
+                .intern-title {
+                  font-size: 6.8rem;
+                }
+              }
+              .intern-sub {
+                transform: translate(0px, -24px);
+                font-size: 3.2rem;
+              }
+            }
+            .intern-sub-hero {
+              .sub-title {
+                font-size: 2.4rem;
+              }
+              .sub-text {
+                width: 65%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.internship-wrap {
+      .employment-section {
+        .carousel-inner {
+          .carousel-item {
+            padding: 4rem 9rem;
+            .row {
+              .img-box {
+                text-align: left;
+                .img-pair {
+                  width: 80%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+   //About-page
+   .wrapall {
+    .team-section {
+      .img-container {
+        .team-img-1 {
+          width: 65rem;
+        }
+        .team-img-2 {
+          bottom: -29.5rem;
+          left: -28rem;
+        }
+      }
+    }
+  }
+
+  // START CONTACT
+.contact-section {
+  font-family: $font-text;
+  .contact-details {
+    .contact-phone-email {
+      .contact-email {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  .form-text {
+    margin-bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .form-container {
+    margin-top: 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+}
+// END CONTACT
+}
+
+// 320px - S Mobile
+@media screen and (max-width: 20em) {
+  .wrapall {
+    &.project-wrap {
+      .project-hero,
+      .section-webdev,
+      .section-graphics {
+        .container {
+          max-width: 300px;
+        }
+      }
+
+      .section-webdev {
+        .webdev-content {
+          .webproj-box {
+            .proj-img-box {
+              .proj-img-1 {
+                transform: scale(0.16);
+              }
+              .proj-img-2 {
+                transform: scale(0.46);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-graphics {
+      .graphics-content {
+        .graphics-content-box {
+          .graphics-item {
+            .graphics-box {
+              &.logo-box {
+                width: 60px;
+                height: 60px;
+                .graphics-img.logo {
+                  transform: scale(0.3);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+     // INTERNSHIP PAGE
+     &.internship-wrap {
+      .hero-section {
+        &.intern-hero {
+          .hero-content {
+            .hero-intern {
+              .hero-intern-title{
+                .intern-rotate {
+                  transform: (rotate(0));
+                  font-size: 3.2rem;
+                  left: 46px;
+                  top: -25px;
+                  margin-left: -5.6rem;
+                }
+                .intern-title {
+                  font-size: 5.8rem;
+                }
+              }
+              .intern-sub {
+                transform: translate(0px, -15px);
+                font-size: 3.2rem;
+              }
+            }
+            .intern-sub-hero {
+              .sub-title {
+                font-size: 2rem;
+              }
+              .sub-text {
+                width: 53%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+    //About-page
+    .wrapall {
+    .team-section {
+      .img-container {
+        .team-img-1 {
+          width: 60rem;
+        }
+        .team-img-2 {
+          bottom: -32.5rem;
+          left: -28rem;
+          transform: scale(0.38);
+        }
+      }
+    }
+  }
+
+  // START CONTACT
+.contact-section {
+  font-family: $font-text;
+  .contact-details {
+    .contact-phone-email {
+      .contact-email {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .contact-map {
+    #map {
+      margin-top: 0;
+    }
+  }
+}
+
+.form-section {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  .form-text {
+    margin-bottom: 0;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+  .form-container {
+    margin-top: 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+}
+// END CONTACT
+}

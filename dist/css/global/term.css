@@ -1,0 +1,50 @@
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .nav-pills .nav-link.active{
+    background: none !important;
+    color: pink !important;
+    
+  }
+
+  .container{
+    margin-top: 50px;
+  }
+
+.middle-title{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+.middle-content{
+  font-size: medium;
+  margin-bottom: 30px;
+}
+
+.container-text-center{
+  text-align: left;
+  margin-top: 20px;
+}
+
+.btn-terms{
+  text-align: left;
+  flex: 0 0 auto;
+}
+
+.terms-nav{
+  width: 300px;
+  height: 50%;
+  overflow-y: scroll;
+}
+
